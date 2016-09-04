@@ -103,6 +103,7 @@ class EmailUserChangeForm(UserChangeForm):
 
     class Meta:
         model = User
+        fields = ['email', 'password']
 
     def __init__(self, *args, **kwargs):
         super(EmailUserChangeForm, self).__init__(*args, **kwargs)
